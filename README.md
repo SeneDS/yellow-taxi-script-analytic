@@ -27,7 +27,7 @@ These questions focus on trends, seasonality, and long-term insights, emphasizin
 
 These insights will help you understand market demand, customer behavior, and financial trends, providing a solid foundation for competing against yellow taxis in NYC.
 
-# Fondamentaux de l'Ingénierie des Données (Data Engineering)
+# Section 1 : Fondamentaux de l'Ingénierie des Données (Data Engineering)
 
 N.B : Il s'agit uniquement des fondamentaux de l'ingénierie des données à connaître pour pouvoir bien suivre ce Projet. En aucun cas, je ne prétends vous donner ici toutes les notions fondamentales de la Data Engineering. Si le sujet vous intéresse, vous trouverez beeaucoup d'autres ressources adaptées sur Internet.
 
@@ -47,7 +47,40 @@ N.B : Il s'agit uniquement des fondamentaux de l'ingénierie des données à con
 
 ## Différence entre ETL et ELT
 
-# Commencez avec Google Cloud Platfor (GCP)
+### **Définition de l'ETL** 
+**Extract – Transform – Load**  
+1. **Extract** : Extraction des données depuis plusieurs sources.  
+2. **Transform** : Transformation avant le stockage (nettoyage, agrégation, jointures).  
+3. **Load** : Chargement des données transformées dans l'entrepôt de données (Data Warehouse).  
+
+---
+
+### **Définition de l'ELT**  
+**Extract – Load – Transform**  
+1. **Extract** : Extraction des données brutes depuis plusieurs sources.  
+2. **Load** : Chargement des données brutes directement dans un Data Warehouse ou Data Lake.  
+3. **Transform** : Transformation directement dans le stockage (via SQL, Spark, BigQuery, Snowflake).  
+
+---
+
+### **Différences clés entre ETL et ELT**  
+| Critère         | ETL                          | ELT                          |
+|----------------|-----------------------------|-----------------------------|
+| **Quand ?**     | Avant le stockage           | Après le stockage           |
+| **Où ?**       | Serveur ETL                  | Data Warehouse / Data Lake  |
+| **Performance** | Plus lent (serveurs limités) | Plus rapide (scalabilité du cloud) |
+| **Flexibilité** | Structuré                    | Adapté au Big Data          |
+| **Stockage**   | Seulement les données utiles | Toutes les données brutes   |
+
+---
+
+### **Conclusion**  
+- L’**ETL** est adapté aux systèmes traditionnels nécessitant des données transformées avant stockage.  
+- L’**ELT** est plus efficace pour les architectures cloud, exploitant la puissance de calcul des entrepôts modernes.  
+- Le choix dépend du contexte, de l’infrastructure et du volume des données.  
+
+
+# Section 2 : Commencez avec Google Cloud Platfor (GCP)
 
 ## Création d'un compte GCP
 
@@ -104,8 +137,12 @@ Les Services du domaine "Artificial Intelligence"
 
 
 
-# Building ELT Pipeline (Data Engineering)
+# Section 3 : Building ELT Pipeline (Data Engineering)
 
-# Data Analysis and Visualization (Data Analyst/Business Analyst)
+# Section 4 : Data Analysis and Visualization (Data Analyst/Business Analyst)
 
-# Building Machine Learning Models with BigQueryML
+# Section 5 : Building Machine Learning Models with BigQueryML
+
+## Qu'est-ce que BigQuery ML ?
+
+## Démo : Construire et évaluer des Modèles ML pour prédire le prix d'un trajet en taxi jaune à New Yoork
