@@ -43,19 +43,33 @@ These insights will help you understand market demand, customer behavior, and fi
 
 N.B : Il s'agit uniquement des fondamentaux de l'ingénierie des données à connaître pour pouvoir bien suivre ce Projet. En aucun cas, je ne prétends vous donner ici toutes les notions fondamentales de la Data Engineering. Si le sujet vous intéresse, vous trouverez beeaucoup d'autres ressources adaptées sur Internet.
 
-## Vidéo : Comprendre le Concept de Data Warehouse
+## Texte : Comprendre le Concept de Data Warehouse
 
-- The challenges are always about moving data from the data source to other environments so the business can use it to get information.
+Dans le monde des données, un des défis majeurs est de déplacer les données depuis leurs sources vers d'autres environnements afin qu'elles puissent être exploitées pour générer de l'information utile aux décisions stratégiques. C'est ici qu'intervient le **Data Warehouse**.  
 
-- Data warehouses were first developed in the 1980s to transform data from operational systems to decision-making support systems. The key principle of a data warehouse is combining data from many different sources into a single location and then transforming it into a format the data warehouse can process and store.
+#### **Origine et Objectif du Data Warehouse**  
+Les Data Warehouses ont été développés dans les années 1980 pour répondre à un besoin croissant : transformer les données issues des systèmes opérationnels en un outil puissant d'aide à la décision. Le principe clé d’un Data Warehouse est de **rassembler les données provenant de sources multiples en un seul endroit**, puis de les **transformer et structurer** afin qu’elles puissent être stockées et exploitées efficacement.  
 
-- Data Silos have always occurred in large organizations. This is quite common in large organizations where each department has different goals, responsibilities, and priorities. So Data Data comes from many different source systems.
+#### **Les Problèmes de Silos de Données**  
+Dans les grandes organisations, il est très courant de voir apparaître des **silos de données**. Chaque département (Finance, Marketing, Ressources Humaines, etc.) travaille souvent avec ses propres systèmes et bases de données, car ils ont des objectifs et des priorités différentes. Cela entraîne une dispersion des données et rend difficile leur exploitation pour une analyse globale et cohérente.  
 
-- To get the full benefit of the data, we need to store the data from different systems in one central place or storage.
+#### **Pourquoi un Data Warehouse ?**  
+Afin de maximiser la valeur des données, il est essentiel de **les centraliser** dans un **espace unique**, un Data Warehouse. Cela permet de :  
+✅ **Briser les silos de données** et faciliter leur accès.  
+✅ **Fournir une vue unifiée** des données à travers toute l’organisation.  
+✅ **Améliorer la qualité des analyses et la prise de décision** grâce à une structuration optimisée des données.  
 
-- Data warehouse products are mostly able to store and process data seamlessly and the user can use the SQL language to access the data in tables with a structured schema format.
+#### **Comment fonctionne un Data Warehouse ?**  
+Les solutions de Data Warehouse sont conçues pour stocker et traiter de grandes quantités de données de manière efficace. Les utilisateurs peuvent accéder aux données via des **requêtes SQL**, qui permettent d’interroger les tables selon une structure bien définie. Cela facilite l’analyse et la production de rapports détaillés à partir des données centralisées.  
 
-- In this Project-based course, we will use BigQuery as Data Warehouse. We'll talk more about BigQuery in a future lesson.
+#### **Le Data Warehouse dans ce cours**  
+Dans ce cours, nous allons utiliser **Google BigQuery** comme Data Warehouse. BigQuery est une solution cloud qui offre de puissantes capacités de stockage et d’analyse de données à grande échelle. Nous explorerons en détail son fonctionnement et ses avantages dans une leçon dédiée.  
+
+📌 **Récapitulatif : Pourquoi utiliser un Data Warehouse ?**  
+✅ Centralisation des données pour une meilleure accessibilité.  
+✅ Amélioration des performances d’analyse et de requêtage.  
+✅ Suppression des silos pour une vision globale des données.  
+✅ Facilité d’utilisation grâce au langage SQL.  
 
 ## Vidéo : Différence entre ETL et ELT
 
