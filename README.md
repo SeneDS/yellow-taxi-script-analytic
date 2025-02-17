@@ -27,11 +27,23 @@ These questions focus on trends, seasonality, and long-term insights, emphasizin
 
 These insights will help you understand market demand, customer behavior, and financial trends, providing a solid foundation for competing against yellow taxis in NYC.
 
+# Vidéo présentation du Cours (une sorte de page de garde)
+
+# Section 0 : Bienvenue dans ce cours
+
+## Vidéo : Introduction - Présentation du Scénario
+
+## Notes importantes pour les étudiant(e)s (texte)
+
+- Ressources : Comment les télécharger et les utiliser
+
+- Détail des Questions Business
+
 # Section 1 : Fondamentaux de l'Ingénierie des Données (Data Engineering)
 
 N.B : Il s'agit uniquement des fondamentaux de l'ingénierie des données à connaître pour pouvoir bien suivre ce Projet. En aucun cas, je ne prétends vous donner ici toutes les notions fondamentales de la Data Engineering. Si le sujet vous intéresse, vous trouverez beeaucoup d'autres ressources adaptées sur Internet.
 
-## Comprendre le Concept de Data Warehouse
+## Vidéo : Comprendre le Concept de Data Warehouse
 
 - The challenges are always about moving data from the data source to other environments so the business can use it to get information.
 
@@ -45,7 +57,7 @@ N.B : Il s'agit uniquement des fondamentaux de l'ingénierie des données à con
 
 - In this Project-based course, we will use BigQuery as Data Warehouse. We'll talk more about BigQuery in a future lesson.
 
-## Différence entre ETL et ELT
+## Vidéo : Différence entre ETL et ELT
 
 ### **Définition de l'ETL** 
 **Extract – Transform – Load**  
