@@ -106,7 +106,7 @@ Dans ce cours, nous allons utiliser **Google BigQuery** comme Data Warehouse. Bi
 - Le choix dépend du contexte, de l’infrastructure et du volume des données.  
 
 
-# Section 2 : Commencez avec Google Cloud Platfor (GCP)
+# Section 2 : Commencez avec Google Cloud Platform (GCP)
 
 ## Création d'un compte GCP
 
@@ -164,6 +164,25 @@ Les Services du domaine "Artificial Intelligence"
 
 
 # Section 3 : Building ELT Pipeline (Data Engineering)
+
+## Vidéo : Clonage du répertoire GitHub et installation des dépendances dans Cloud Shell
+
+Bienvenue dans cette leçon où il s'agira de :
+
+- cloner le répertoire github du projet dans le Cloud Shell
+- Créer et activer un environnement virtuel Python
+- d'installer les packages nécessaires.
+
+## Vidéo : Création d’un Bucket GCS et upload du projet
+
+Bienvenue dans cette leçon où il s'agira de :
+
+- Créer un Bucket GCS
+
+- Uploader le répertoire du projet dans ce Bucket
+
+
+
 
 # Section 4 : Data Analysis and Visualization (Data Analyst/Business Analyst)
 
