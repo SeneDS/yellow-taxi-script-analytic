@@ -253,6 +253,12 @@ Bienvenue dans cette leçon où vous apprendrez à :
 
 ## Video : Réflexion sur la partie Load
 
+## Video : Analye exploratoire de quelques fichiers Parquet dans GCS
+
+L'objectif est de vérifier s'il y a des disparités de schéma entre les fichiers parquet
+
+## Video : Découverte, Explication et Exécution du Script de Chargement des fichiers parquet vers GCS
+
 # Section 5 : Data Analysis and Visualization (Data Analyst/Business Analyst)
 
 # Section 6 : Building Machine Learning Models with BigQueryML
