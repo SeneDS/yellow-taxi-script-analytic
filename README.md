@@ -163,7 +163,7 @@ Les Services du domaine "Artificial Intelligence"
 
 
 
-# Section 3 : Building ELT Pipeline (Data Engineering)
+# Section 3 : Extraction des données depuis la source vers Google Cloud Storage
 
 ## Vidéo : Clonage du répertoire GitHub et installation des dépendances dans Cloud Shell
 
@@ -177,16 +177,76 @@ Bienvenue dans cette leçon où il s'agira de :
 
 Bienvenue dans cette leçon où il s'agira de :
 
-- Créer un Bucket GCS
+- Créer un Bucket GCS (Console GCP)
 
-- Uploader le répertoire du projet dans ce Bucket
+- Uploader le répertoire du projet dans ce Bucket (Cloud Shell)
+
+***export DESTINATION_BUCKET_NAME=yellow-taxi-trips-analytics-data-bucket***
+
+***gcloud storage cp -r nyc-yellow-taxi-trips/* gs://$DESTINATION_BUCKET_NAME/from-git/***
+
+
+## Video : Exploration des données source et réflexion sur l'automatisation du téléchargement des fichiers parquet
+
+## Video : Limites du script simple et améliorations dans le Script optimisé pour un Pipeline en production
+
+## Vidéo : Implémentation et exécution du script optimisé pour l'extraction des données vers GCS
+
+## Leçon Texte : **Conclusion : Extraction des données vers Google Cloud Storage**
+
+### **Slide 1 : Titre & Introduction**
+- **Titre : Fin de la phase d’Extraction - Passage à l’étape suivante**
+- **Sous-titre : Centralisation des données dans BigQuery**
+- Image d’illustration : Pipeline de données avec une flèche vers BigQuery
+
+---
+
+### **Slide 2 : Récapitulatif de la phase d’Extraction**
+✅ **Nous avons réalisé :**
+- **Clonage du répertoire GitHub et installation des dépendances**
+- **Création d’un Bucket GCS et upload du projet**
+- **Exploration des données source et réflexion sur leur automatisation**
+- **Identification des limites d’un script simple**
+- **Implémentation et exécution d’un script optimisé pour l’extraction des fichiers PARQUET vers GCS**
+
+---
+
+### **Slide 3 : Importance de cette étape**
+📌 **Pourquoi cette phase est cruciale ?**
+- Permet de **collecter les données brutes** dans un espace de stockage centralisé (GCS).
+- Assure un **pipeline robuste et automatisé** pour l’ingestion des fichiers.
+- Pose les bases pour l’étape suivante : **le chargement des données dans BigQuery.**
+
+---
+
+### **Slide 4 : Prochaine étape - Centralisation des données dans BigQuery**
+🚀 **Phase suivante : Le chargement des données dans BigQuery (Load)**
+- Objectif : **Transférer les données brutes de GCS vers BigQuery** pour les rendre exploitables.
+- Permet d’avoir **une seule source de vérité** pour toutes les analyses.
+- Déploiement d’un processus **scalable et optimisé pour le Cloud.**
+
+📌 **Ce que nous allons voir :**
+✅ Création des tables BigQuery
+✅ Chargement des fichiers PARQUET depuis GCS
+✅ Automatisation du processus avec Cloud Composer
+
+---
+
+### **Slide 5 : Conclusion & Transition**
+🎯 **Félicitations !** Vous avez terminé la phase d’extraction des données.
+
+📢 **Dans la prochaine section, nous verrons comment charger ces données dans BigQuery pour centraliser l’information et faciliter les analyses.**
+
+🔜 **Passons maintenant à la phase Load !** 🚀
+
+
+# Section 4 : Chargement des données brutes de GCS vers BigQuery pour les rendre exploitables
 
 
 
+# Section 5 : Data Analysis and Visualization (Data Analyst/Business Analyst)
 
-# Section 4 : Data Analysis and Visualization (Data Analyst/Business Analyst)
-
-# Section 5 : Building Machine Learning Models with BigQueryML
+# Section 6 : Building Machine Learning Models with BigQueryML
 
 ## Qu'est-ce que BigQuery ML ?
 
