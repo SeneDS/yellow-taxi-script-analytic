@@ -259,9 +259,13 @@ L'objectif est de vérifier s'il y a des disparités de schéma entre les fichie
 
 ## Video : Découverte, Explication et Exécution du Script de Chargement des fichiers parquet vers GCS
 
-# Section 5 : Data Analysis and Visualization (Data Analyst/Business Analyst)
+## Vérfication des résultats de l'exécution du Processus Load - Conclusion de cette phase
 
-# Section 6 : Building Machine Learning Models with BigQueryML
+# Section 5 : Transformation des données dans BigQuery
+
+# Section 6 : Data Analysis and Visualization (Data Analyst/Business Analyst)
+
+# Section 7 : Building Machine Learning Models with BigQueryML
 
 ## Qu'est-ce que BigQuery ML ?
 
