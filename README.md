@@ -161,8 +161,6 @@ Les Services du domaine "Artificial Intelligence"
 - Vertex AI : comporte tous les outils dont vous avez besoin pour créer du machine learning et du MLOps – par exemple, des notebooks, des pipelines, un magasin de modèles et d'autres services liés au machine learning
 
 
-
-
 # Section 3 : Extraction des données depuis la source vers Google Cloud Storage
 
 ## Vidéo : Clonage du répertoire GitHub et installation des dépendances dans Cloud Shell
@@ -184,7 +182,6 @@ Bienvenue dans cette leçon où il s'agira de :
 ***export DESTINATION_BUCKET_NAME=yellow-taxi-trips-analytics-data-bucket***
 
 ***gcloud storage cp -r nyc-yellow-taxi-trips/* gs://$DESTINATION_BUCKET_NAME/from-git/***
-
 
 ## Video : Exploration des données source et réflexion sur l'automatisation du téléchargement des fichiers parquet
 
@@ -242,7 +239,19 @@ Bienvenue dans cette leçon où il s'agira de :
 
 # Section 4 : Chargement des données brutes de GCS vers BigQuery pour les rendre exploitables
 
+## Vidéo : Introduction à BigQuery
 
+## Création dun Dataset et des Tables dans BigQuery
+
+Bienvenue dans cette leçon où vous apprendrez à :
+
+- utiliser la Console GCP pour créer un Dataset et des tables dans BigQuery
+
+  Datatet : *raw_yellowtrips*, Tables : *taxi_zone*, *trips*
+
+- Requêtez les données de vos tables
+
+## Video : Réflexion sur la partie Load
 
 # Section 5 : Data Analysis and Visualization (Data Analyst/Business Analyst)
 
