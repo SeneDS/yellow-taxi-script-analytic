@@ -263,9 +263,18 @@ L'objectif est de vérifier s'il y a des disparités de schéma entre les fichie
 
 # Section 5 : Transformation des données dans BigQuery
 
-# Section 6 : Data Analysis and Visualization (Data Analyst/Business Analyst)
+## Video : Introduction à l'étape de Transformation des données
 
-# Section 7 : Building Machine Learning Models with BigQueryML
+## Video : Comment créez des datasets BigQuery avec du code Python
+
+## Video : Exécution du script Transform et conclusion de la section
+
+
+# Section 6 : Orchestration et Automatisation du Pipeline ELT avec Google Composer
+
+# Section 7 : Data Analysis and Visualization (Data Analyst/Business Analyst)
+
+# Section 8 : Building Machine Learning Models with BigQueryML
 
 ## Qu'est-ce que BigQuery ML ?
 
