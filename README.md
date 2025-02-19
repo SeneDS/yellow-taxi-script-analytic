@@ -272,6 +272,12 @@ L'objectif est de vérifier s'il y a des disparités de schéma entre les fichie
 
 # Section 6 : Orchestration et Automatisation du Pipeline ELT avec Google Composer
 
+## Video : Introduction Section Orchestration
+
+## Video : Exemple d'un DAG Airflow (dans Google Colab)
+
+## Video : Création d'un environnement cloud composer
+
 # Section 7 : Data Analysis and Visualization (Data Analyst/Business Analyst)
 
 # Section 8 : Building Machine Learning Models with BigQueryML
