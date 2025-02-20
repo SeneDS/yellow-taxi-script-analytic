@@ -278,6 +278,11 @@ L'objectif est de vérifier s'il y a des disparités de schéma entre les fichie
 
 ## Video : Création d'un environnement cloud composer
 
+## Video : Présentation et explication ddu DAG de notre pipeline ELT
+
+## Video : Déploiement du DAG dans Cloud Composer
+
+
 # Section 7 : Data Analysis and Visualization (Data Analyst/Business Analyst)
 
 # Section 8 : Building Machine Learning Models with BigQueryML
