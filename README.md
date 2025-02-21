@@ -308,10 +308,13 @@ L'objectif est de vérifier s'il y a des disparités de schéma entre les fichie
 
 ## Video : Reporting Market Demand & Seasonality - Customer Behavior & Ride Characteristics
 
-## Video : Report 2 Financial and Pricing Analysis
+## Video : Report 2 Financial and Pricing Analysis et les autres Rapports
 
 
-# Section 9 : Building Machine Learning Models with BigQueryML
+# Section 9 : Feature Engineering
+
+
+# Section 10 : Building Machine Learning Models with BigQueryML
 
 ## Qu'est-ce que BigQuery ML ?
 
