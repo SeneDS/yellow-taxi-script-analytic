@@ -304,7 +304,11 @@ L'objectif est de vérifier s'il y a des disparités de schéma entre les fichie
 
 # Section 8 : Reporting dans Notebooks Python
 
+## Video : Intro aux Notebooks dans BigQuery
 
+## Video : Reporting Market Demand & Seasonality - Customer Behavior & Ride Characteristics
+
+## Video : Report 2 Financial and Pricing Analysis
 
 
 # Section 9 : Building Machine Learning Models with BigQueryML
