@@ -276,12 +276,17 @@ L'objectif est de vérifier s'il y a des disparités de schéma entre les fichie
 
 ## Video : Exemple d'un DAG Airflow (dans Google Colab)
 
+## Video : Présentation et explication du code du DAG de notre pipeline ELT
+
+## Video : Correction Nom du Bucket dans le code du DAG
+
 ## Video : Création d'un environnement cloud composer
 
-## Video : Présentation et explication ddu DAG de notre pipeline ELT
+## Video : Déploiement du DAG dans Cloud Composer et voir les résultats dans Airflow UI
 
-## Video : Déploiement du DAG dans Cloud Composer
+## Video : Récap de tout ce qui a tété fait et annonce des prochaines phases
 
+## Video : Appel aux Data Engineers à devenir Consultant Data Full Stack
 
 # Section 7 : Data Analysis and Visualization (Data Analyst/Business Analyst)
 
