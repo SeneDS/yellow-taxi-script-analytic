@@ -288,9 +288,26 @@ L'objectif est de vérifier s'il y a des disparités de schéma entre les fichie
 
 ## Video : Appel aux Data Engineers à devenir Consultant Data Full Stack
 
-# Section 7 : Data Analysis and Visualization (Data Analyst/Business Analyst)
 
-# Section 8 : Building Machine Learning Models with BigQueryML
+# Section 7 : Data Analysis - Creation des Vues
+
+## Video : Vue SQL - Rappel des questions Business
+
+## Video : Demande du marché et saisonnalité - Comportement des clients
+
+## Video Astuce ChatGPT pour comprendre un code SQL
+
+## Video : Analyse financière et tarifaire
+
+## Video : Informations sur la concurrence et efficacité opérationnelle
+
+
+# Section 8 : Reporting dans Notebooks Python
+
+
+
+
+# Section 9 : Building Machine Learning Models with BigQueryML
 
 ## Qu'est-ce que BigQuery ML ?
 
