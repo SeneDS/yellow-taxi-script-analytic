@@ -324,3 +324,9 @@ L'objectif est de vérifier s'il y a des disparités de schéma entre les fichie
 ## Video : Préparation des données et sauvegarde dans des tables BigQuery
 
 ## Video : Construction d'un Modèle Boosted Tree Regressor et Analyse des résultats
+
+## Video : Construction d'un Modèle Random Forest Tree Regressor et Analyse des résultats
+
+## Video : Evaluation du meilleur modèle sur le jeu de données Test
+
+## Video : Prédictions de nouvelles observations et Feature Importance
