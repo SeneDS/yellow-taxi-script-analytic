@@ -311,11 +311,16 @@ L'objectif est de vérifier s'il y a des disparités de schéma entre les fichie
 ## Video : Report 2 Financial and Pricing Analysis et les autres Rapports
 
 
-# Section 9 : Feature Engineering
+# Section 9 : Feature Engineering (section optionnelle)
 
+  peut-être une seule leçon texte sur ce qu'est le Feature Engineering et son importance
 
 # Section 10 : Building Machine Learning Models with BigQueryML
 
-## Qu'est-ce que BigQuery ML ?
+## Video : Qu'est-ce que BigQuery ML ?
 
-## Démo : Construire et évaluer des Modèles ML pour prédire le prix d'un trajet en taxi jaune à New Yoork
+## Video : Creation de la table trips_ml_data
+
+## Video : Préparation des données et sauvegarde dans des tables BigQuery
+
+## Video : Construction d'un Modèle Boosted Tree Regressor et Analyse des résultats
