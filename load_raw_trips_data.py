@@ -6,15 +6,15 @@ import io
 from datetime import UTC  # Import UTC explicitly
 
 # Set project-specific variables
-PROJECT_ID = "nyc-yellow-trips"
-BUCKET_NAME = f"{PROJECT_ID}-data-buckets"
+PROJECT_ID = "yellow-taxi-script-analytic"
+BUCKET_NAME = f"{PROJECT_ID}-data-bucket"
 GCS_FOLDER = "dataset/trips/"
 GCS_LOG_FOLDER = "from-git/logs/"
-TABLE_ID = f"{PROJECT_ID}.raw_yellowtrips.trips"
+TABLE_ID = f"{PROJECT_ID}.raw_yellowtrips.trips" 
 TEMP_TABLE_ID = f"{TABLE_ID}_temp" # Temporary table to load data without type constraints
 
 # Initialize BigQuery and GCS clients
-bq_client = bigquery.Client(project=PROJECT_ID, location="US")
+bq_client = bigquery.Client(project=PROJECT_ID, location="EU")
 storage_client = storage.Client()
 
 # Set up logging
@@ -37,7 +37,7 @@ def get_existing_files():
         FROM `{TABLE_ID}`
         WHERE source_file IS NOT NULL
     """
-    query_job = bq_client.query(query, location="US")  # Specify the dataset location
+    query_job = bq_client.query(query, location="EU")  # Specify the dataset location
     return {row.source_file for row in query_job.result()}
 
 # %%
@@ -117,3 +117,5 @@ def load_new_files():
 
 if __name__ == "__main__":
     load_new_files()
+
+# %%

@@ -5,15 +5,15 @@ import io
 from datetime import UTC  # Import UTC explicitly
 
 # Define project, dataset, and table details
-PROJECT_ID = "nyc-yellow-trips"
+PROJECT_ID = "yellow-taxi-script-analytic"
 RAW_TABLE = f"{PROJECT_ID}.raw_yellowtrips.trips"
 TRANSFORMED_TABLE = f"{PROJECT_ID}.transformed_data.cleaned_and_filtered"
 ML_TABLE = f"{PROJECT_ID}.ml_dataset.trips_ml_data"
 GCS_LOG_FOLDER = "from-git/logs/"
-BUCKET_NAME = f"{PROJECT_ID}-data-buckets"
+BUCKET_NAME = f"{PROJECT_ID}-data-bucket"
 
 # Initialize BigQuery and GCS clients
-client = bigquery.Client(project=PROJECT_ID, location="US")
+client = bigquery.Client(project=PROJECT_ID, location="EU")
 storage_client = storage.Client()
 
 # Set up logging
@@ -35,7 +35,7 @@ QUERY = f"""
 CREATE OR REPLACE TABLE `{ML_TABLE}` AS
 SELECT *
 FROM `{TRANSFORMED_TABLE}`
-WHERE tpep_pickup_datetime >= TIMESTAMP('2024-11-01') 
+WHERE tpep_pickup_datetime >= TIMESTAMP('2025-02-01') 
 AND EXTRACT(YEAR FROM tpep_pickup_datetime) BETWEEN 2024 AND EXTRACT(YEAR FROM CURRENT_DATE())
 AND payment_type IN (1, 2);
 """

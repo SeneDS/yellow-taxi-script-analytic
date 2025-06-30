@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 
 # Define DAG default arguments
 default_args = {
-    'owner': 'josue_data_engineer',
+    'owner': 'etiennesene ',
     'depends_on_past': False,
     'start_date': days_ago(0),  # Run immediately after deployment
     'retries': 2,
@@ -38,7 +38,7 @@ with DAG(
     download_taxi_data = BashOperator(
         task_id="download_taxi_data",
         bash_command="""
-                    gsutil cp gs://nyc-yellow-trips-data-buckets/from-git/download_taxi_data.py /tmp/download_taxi_data.py &&
+                    gsutil cp gs://yellow-taxi-script-analytic-data-bucket/from-git/download_taxi_data.py /tmp/download_taxi_data.py &&
                     python3 /tmp/download_taxi_data.py
                     """,
     )
@@ -46,15 +46,15 @@ with DAG(
     load_raw_trips_data = BashOperator(
         task_id="load_raw_trips_data",
         bash_command="""
-                    gsutil cp gs://nyc-yellow-trips-data-buckets/from-git/load_raw_trips_data.py /tmp/load_raw_trips_data.py &&
+                    gsutil cp gs://yellow-taxi-script-analytic-data-bucket/from-git/load_raw_trips_data.py /tmp/load_raw_trips_data.py &&
                     python3 /tmp/load_raw_trips_data.py
                     """,
     )
-
+# tmp est une machine locale dans le pode kubernetes où cette tache s'execute
     transform_trips_data = BashOperator(
         task_id="transform_trips_data",
         bash_command="""
-                    gsutil cp gs://nyc-yellow-trips-data-buckets/from-git/transform_trips_data.py /tmp/transform_trips_data.py &&
+                    gsutil cp gs://yellow-taxi-script-analytic-data-bucket/from-git/transform_trips_data.py /tmp/transform_trips_data.py &&
                     python3 /tmp/transform_trips_data.py
                     """,
     )

@@ -6,14 +6,21 @@ import logging
 import io
 from datetime import UTC  # Import UTC explicitly
 
+
+# Instantiates a client
+storage_client = storage.Client()
+
 # Pproject ID and Bucket name
-PROJECT_ID = "nyc-yellow-trips"
-BUCKET_NAME = f"{PROJECT_ID}-data-buckets"
+PROJECT_ID = "yellow-taxi-script-analytic"
+BUCKET_NAME = f"{PROJECT_ID}-data-bucket"
 GCS_FOLDER = "dataset/trips/"
 GCS_LOG_FOLDER = "from-git/logs/"
 
-# Initialize Google Cloud Storage client
-storage_client = storage.Client()
+
+PROJECT_ID = "yellow-taxi-script-analytic"
+BUCKET_NAME = f"{PROJECT_ID}-data-bucket"
+GCS_FOLDER = "dataset/trips/"
+GCS_LOG_FOLDER = "from-git/logs/"
 
 # Set up logging
 log_stream = io.StringIO()
@@ -35,6 +42,15 @@ def upload_log_to_gcs():
     blob.upload_from_string(log_stream.getvalue())
     logging.info(f"Log file uploaded to {log_filename}")
 
+
+def upload_to_gcs(bucket_name, destination_blob_name, content):
+    """Upload binary content to GCS."""
+    bucket = storage_client.bucket(bucket_name)
+    blob = bucket.blob(destination_blob_name)
+    blob.upload_from_string(content)
+    logging.info(f"{destination_blob_name} uploaded to GCS.")
+
+
 def download_histo_data():
     """
     Downloads the PARQUET files of yellow taxis from 2020 to the current year and sends them directly to Google Cloud Storage under trips/ folder.
@@ -42,7 +58,7 @@ def download_histo_data():
     current_year = datetime.now().year
 
     try:
-        for year in range(2020, current_year + 1):
+        for year in range(2023, current_year + 1):
             for month in range(1, 13):
                 file_name = f"yellow_tripdata_{year}-{month:02d}.parquet"
                 gcs_path = f"{GCS_FOLDER}{file_name}"
